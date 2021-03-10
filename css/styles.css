@@ -140,6 +140,8 @@ body {
 .header-mail-link,
 .header-tel-link {
   color: var(--main-text-color);
+  display: flex;
+  align-items: center;
 }
 
 .header-mail-link:hover,
@@ -164,6 +166,7 @@ body {
 .header-contacts {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 
 .header .container,
@@ -172,18 +175,36 @@ body {
   align-items: center;
 }
 
+.icon-envelope,
+.icon-smartphone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 /* ================END HEADER======================= */
 
 /* ================HERO======================= */
 .hero {
+}
+
+.overlay {
   background-color: var(--dark-background);
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-/* .hero .container {
-  max-width: 696px;
-} */
 
 .hero-title {
   margin-right: auto;
@@ -250,6 +271,17 @@ body {
   max-width: 270px;
 }
 
+.thumb {
+  background-color: var(--light-background);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
 /* ================END FEATURES======================= */
 
 /* ===================SERVICES=================== */
@@ -287,6 +319,9 @@ body {
   color: var(--title-color);
   margin-bottom: 10px;
 }
+.team-member-title {
+  margin-bottom: 16px;
+}
 
 .team-member-name,
 .team-member-title {
@@ -317,7 +352,83 @@ body {
 .name-card {
   padding: 30px;
 }
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--secondary-text-color);
+}
 /* ===================END TEAM======================= */
+
+/* ===================CLIENTS========================== */
+
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-pics {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.client-item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.client-button {
+  color: #afb1b8;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 170px;
+  height: 90px;
+}
+
+.client-button:hover,
+.client-button:focus {
+  color: var(--accent-color);
+}
+.icon-logo-1,
+.icon-logo-2,
+.icon-logo-3,
+.icon-logo-4,
+.icon-logo-5,
+.icon-logo-6 {
+  fill: currentColor;
+}
+
+/* ===================END CLIENTS======================= */
 
 /* ================PORTFOLIO======================= */
 
@@ -375,6 +486,12 @@ body {
   flex-basis: calc(100% / 3 - 30px);
 }
 
+.list-item .link:hover,
+.list-item .link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .work-title {
   font-weight: 700;
   font-size: 18px;
@@ -395,8 +512,43 @@ body {
 /* ===================FOOTER======================= */
 .footer {
   background-color: var(--dark-background);
+  /* padding-top: 60px;
+  padding-bottom: 60px; */
+}
+
+.footer .container {
+  display: flex;
+}
+.address-wrapper {
+  margin-right: 70px;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.social-wrapper {
+  width: 206px;
+  padding-top: 72px;
+}
+.footer .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .social-link:hover,
+.footer .social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer .social-icon {
+  fill: var(--secondary-text-color);
+}
+.join-text {
+  display: block;
+  color: var(--secondary-text-color);
+  width: 145px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .address {
