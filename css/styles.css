@@ -272,14 +272,14 @@ body {
 }
 
 .thumb {
+  display: flex;
   background-color: var(--light-background);
   margin-bottom: 30px;
   border-radius: 4px;
   width: 270px;
   height: 120px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ================END FEATURES======================= */
@@ -358,6 +358,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .social-link {
   display: flex;
   width: 44px;
@@ -366,12 +367,12 @@ body {
   justify-content: center;
   align-items: center;
   color: #afb1b8;
+  fill: currentColor;
 }
 
 .social-icon {
   width: 20px;
   height: 20px;
-  fill: currentColor;
 }
 
 .social-link:hover,
@@ -400,6 +401,8 @@ body {
 .client-item {
   margin-left: 30px;
   margin-top: 30px;
+  width: 170px;
+  height: 90px;
 }
 .client-button {
   color: #afb1b8;
@@ -411,21 +414,14 @@ body {
   border-radius: 4px;
   box-sizing: border-box;
   cursor: pointer;
-  width: 170px;
-  height: 90px;
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
 }
 
 .client-button:hover,
 .client-button:focus {
   color: var(--accent-color);
-}
-.icon-logo-1,
-.icon-logo-2,
-.icon-logo-3,
-.icon-logo-4,
-.icon-logo-5,
-.icon-logo-6 {
-  fill: currentColor;
 }
 
 /* ===================END CLIENTS======================= */
