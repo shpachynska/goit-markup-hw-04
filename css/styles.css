@@ -508,21 +508,19 @@ body {
 /* ===================FOOTER======================= */
 .footer {
   background-color: var(--dark-background);
-  /* padding-top: 60px;
-  padding-bottom: 60px; */
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 .address-wrapper {
   margin-right: 70px;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .social-wrapper {
   width: 206px;
-  padding-top: 72px;
 }
 .footer .social-link {
   background-color: rgba(255, 255, 255, 0.1);
